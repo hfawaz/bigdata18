@@ -20,3 +20,17 @@ All python packages needed are listed in [pip-requirements.txt] [[TDO ADD LINK]]
 * [h5py](http://docs.h5py.org/en/latest/build.html)
 
 ## Results
+
+
+## Reference
+
+If you re-use this work, please cite:
+
+```
+@InProceedings{IsmailFawaz2018transfer,
+  Title                    = {Transfer learning for time series classification},
+  Author                   = {Ismail Fawaz, Hassan and Forestier, Germain and Weber, Jonathan and Idoumghar, Lhassane and Muller, Pierre-Alain},
+  booktitle                = {IEEE International Conference On Big Data},
+  Year                     = {2018}
+}
+```
