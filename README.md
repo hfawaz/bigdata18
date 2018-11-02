@@ -6,6 +6,9 @@ This is the companion repository for our paper titled "Transfer learning for tim
 
 ## Source code
 The software is developed using Python 3.5. We trained the models on a cluster of more than 60 GPUs. You will need the [UCR archive](https://www.cs.ucr.edu/~eamonn/time_series_data/) to re-run the experiments of the paper. 
+### Pre-trained and fine-tuned models
+You can download from the companion [web page](http://germain-forestier.info/bigdata2018/) all pre-trained and fine-tuned models you would need to re-produce the experiments. 
+Feel free to fine-tune on your own datasets !!! 
 
 ## Prerequisites
 All python packages needed are listed in [pip-requirements.txt] [[TDO ADD LINK]] file and can be installed simply using the pip command. 
@@ -20,7 +23,17 @@ All python packages needed are listed in [pip-requirements.txt] [[TDO ADD LINK]]
 * [h5py](http://docs.h5py.org/en/latest/build.html)
 
 ## Results
-
+The raw results can be found on our companion [web page](http://germain-forestier.info/bigdata2018/).
+### Accuracy variation matrix
+![acc-matrix](https://github.com/hfawaz/bigdata18/blob/master/acc-matrix.png)
+### Genrealization with and without the transfer learning
+50words - FISH              |  FordA - wafer | Adiac - ShapesAll
+:-------------------------:|:-------------------------:|:-------------------------:
+![plot-50words-fish](https://github.com/hfawaz/aaltd18/blob/master/png/plot-50words-fish.png)  |  ![plot-forda-wafer](https://github.com/hfawaz/aaltd18/blob/master/png/plot-forda-wafer.png) | ![plot-adiac-shapesall](https://github.com/hfawaz/aaltd18/blob/master/png/plot-adiac-shapesall.png)
+### Model's accuracy with respect to the source dataset's similarity
+Herring              |  BeetleFly | WormsTwoClass
+:-------------------------:|:-------------------------:|:-------------------------:
+![herring](https://github.com/hfawaz/aaltd18/blob/master/png/herring.png)  |  ![beetlefly](https://github.com/hfawaz/aaltd18/blob/master/png/beetlefly.png) | ![wormstwoclass](https://github.com/hfawaz/aaltd18/blob/master/png/wormstwoclass.png)
 
 ## Reference
 
