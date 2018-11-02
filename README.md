@@ -2,7 +2,7 @@
 This is the companion repository for our paper titled "Transfer learning for time series classification" accepted as a regular paper at [IEEE International Conference on Big Data 2018](http://cci.drexel.edu/bigdata/bigdata2018/index.html) also available on ArXiv [[ADD LINK TODO]]. 
 
 ## Architecture
-![architecture fcn](https://github.com/hfawaz/bigdata18/blob/master/fcn-archi.png)
+![architecture fcn](https://github.com/hfawaz/bigdata18/blob/master/png/fcn-archi.png)
 
 ## Source code
 The software is developed using Python 3.5. We trained the models on a cluster of more than 60 GPUs. You will need the [UCR archive](https://www.cs.ucr.edu/~eamonn/time_series_data/) to re-run the experiments of the paper. 
@@ -25,15 +25,15 @@ All python packages needed are listed in [pip-requirements.txt] [[TDO ADD LINK]]
 ## Results
 The raw results can be found on our companion [web page](http://germain-forestier.info/bigdata2018/).
 ### Accuracy variation matrix
-![acc-matrix](https://github.com/hfawaz/bigdata18/blob/master/acc-matrix.png)
+![acc-matrix](https://github.com/hfawaz/bigdata18/blob/master/png/acc-matrix.png)
 ### Genrealization with and without the transfer learning
 50words - FISH              |  FordA - wafer | Adiac - ShapesAll
 :-------------------------:|:-------------------------:|:-------------------------:
-![plot-50words-fish](https://github.com/hfawaz/aaltd18/blob/master/png/plot-50words-fish.png)  |  ![plot-forda-wafer](https://github.com/hfawaz/aaltd18/blob/master/png/plot-forda-wafer.png) | ![plot-adiac-shapesall](https://github.com/hfawaz/aaltd18/blob/master/png/plot-adiac-shapesall.png)
+![plot-50words-fish](https://github.com/hfawaz/bigdata18/blob/master/png/plot-50words-fish.png)  |  ![plot-forda-wafer](https://github.com/hfawaz/bigdata18/blob/master/png/plot-forda-wafer.png) | ![plot-adiac-shapesall](https://github.com/hfawaz/bigdata18/blob/master/png/plot-adiac-shapesall.png)
 ### Model's accuracy with respect to the source dataset's similarity
 Herring              |  BeetleFly | WormsTwoClass
 :-------------------------:|:-------------------------:|:-------------------------:
-![herring](https://github.com/hfawaz/aaltd18/blob/master/png/herring.png)  |  ![beetlefly](https://github.com/hfawaz/aaltd18/blob/master/png/beetlefly.png) | ![wormstwoclass](https://github.com/hfawaz/aaltd18/blob/master/png/wormstwoclass.png)
+![herring](https://github.com/hfawaz/bigdata18/blob/master/png/herring.png)  |  ![beetlefly](https://github.com/hfawaz/bigdata18/blob/master/png/beetlefly.png) | ![wormstwoclass](https://github.com/hfawaz/bigdata18/blob/master/png/wormstwoclass.png)
 
 ## Reference
 
