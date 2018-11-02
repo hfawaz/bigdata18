@@ -1,0 +1,10 @@
+sklearn
+matplotlib
+keras
+tensorflow
+h5py
+pandas
+numpy
+seaborn
+Orange3
+# keras_contrib # installed using pip3 install git+https://www.github.com/keras-team/keras-contrib.git
