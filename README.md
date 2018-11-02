@@ -23,7 +23,12 @@ All python packages needed are listed in [pip-requirements.txt] [[TDO ADD LINK]]
 * [h5py](http://docs.h5py.org/en/latest/build.html)
 
 ## Results
-The raw results can be found on our companion [web page](http://germain-forestier.info/bigdata2018/).
+You can download [here](https://github.com/hfawaz/bigdata18/blob/master/results/df_transfer.csv) the accuracy variation matrix which corresponds to the raw results of the transfer matrix in the paper.
+
+You can download [here](https://github.com/hfawaz/bigdata18/blob/master/results/df_transfer_acc.csv) the raw results for the accuracy matrix instead of the variation.
+
+You can download [here](https://github.com/hfawaz/bigdata18/blob/master/results/similar_datasets.csv) the result of the applying nearest neighbor algorithm on the inter-datasets similarity matrix. You will find for each dataset in the archive, the 84 most similar datasets.
+
 ### Accuracy variation matrix
 ![acc-matrix](https://github.com/hfawaz/bigdata18/blob/master/png/acc-matrix.png)
 ### Genrealization with and without the transfer learning
