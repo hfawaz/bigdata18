@@ -7,14 +7,14 @@ This is the companion repository for our paper titled "Transfer learning for tim
 ## Source code
 The software is developed using Python 3.5. We trained the models on a cluster of more than 60 GPUs. You will need the [UCR archive](https://www.cs.ucr.edu/~eamonn/time_series_data/) to re-run the experiments of the paper. 
 
-If you encouter any problems with cython, you can re-generate the "c" files using the [build-cython.sh] [[TDO ADD LINK]] script. 
+If you encouter problems with cython, you can re-generate the "c" files using the [build-cython.sh](https://github.com/hfawaz/bigdata18/blob/master/utils/build-cython.sh) script. 
 
 ### Pre-trained and fine-tuned models
 You can download from the companion [web page](http://germain-forestier.info/bigdata2018/) all pre-trained and fine-tuned models you would need to re-produce the experiments. 
 Feel free to fine-tune on your own datasets !!! 
 
 ## Prerequisites
-All python packages needed are listed in [pip-requirements.txt] [[TDO ADD LINK]] file and can be installed simply using the pip command. 
+All python packages needed are listed in [pip-requirements.txt](https://github.com/hfawaz/bigdata18/blob/master/utils/pip-requirements.txt) file and can be installed simply using the pip command. 
 
 * [numpy](http://www.numpy.org/)  
 * [pandas](https://pandas.pydata.org/)  
