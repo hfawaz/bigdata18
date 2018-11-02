@@ -28,6 +28,7 @@ You can download [here](https://github.com/hfawaz/bigdata18/blob/master/results/
 You can download [here](https://github.com/hfawaz/bigdata18/blob/master/results/df_transfer_acc.csv) the raw results for the accuracy matrix instead of the variation.
 
 You can download [here](https://github.com/hfawaz/bigdata18/blob/master/results/similar_datasets.csv) the result of the applying nearest neighbor algorithm on the inter-datasets similarity matrix. You will find for each dataset in the archive, the 84 most similar datasets.
+The steps for computing the similarity matrix are presented in Algorithm 1 in our paper.
 
 ### Accuracy variation matrix
 ![acc-matrix](https://github.com/hfawaz/bigdata18/blob/master/png/acc-matrix.png)
