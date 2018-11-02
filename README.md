@@ -9,6 +9,14 @@ The software is developed using Python 3.5. We trained the models on a cluster o
 
 If you encouter problems with cython, you can re-generate the "c" files using the [build-cython.sh](https://github.com/hfawaz/bigdata18/blob/master/utils/build-cython.sh) script. 
 
+To train the network from scratch launch: ```python3 main.py train_fcn_scratch```
+
+To apply the transfer learning between each pair of datasets launch: ```python3 main.py transfer_learning```
+
+To visualize the figures in the paper launch: ```python3 main.py visualize_transfer_learning```
+
+To generate the inter-datasets similariy matrix launch: ```python3 main.py compare_datasets```
+
 ### Pre-trained and fine-tuned models
 You can download from the companion [web page](http://germain-forestier.info/bigdata2018/) all pre-trained and fine-tuned models you would need to re-produce the experiments. 
 Feel free to fine-tune on your own datasets !!! 
