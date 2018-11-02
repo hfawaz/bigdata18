@@ -29,7 +29,7 @@ The raw results can be found on our companion [web page](http://germain-forestie
 ### Genrealization with and without the transfer learning
 50words - FISH              |  FordA - wafer | Adiac - ShapesAll
 :-------------------------:|:-------------------------:|:-------------------------:
-![plot-50words-fish](https://github.com/hfawaz/bigdata18/blob/master/png/plot-50words-fish.png)  |  ![plot-forda-wafer](https://github.com/hfawaz/bigdata18/blob/master/png/plot-forda-wafer.png) | ![plot-adiac-shapesall](https://github.com/hfawaz/bigdata18/blob/master/png/plot-adiac-shapesall.png)
+![plot-50words-fish](https://github.com/hfawaz/bigdata18/blob/master/png/50words-fish.png)  |  ![plot-forda-wafer](https://github.com/hfawaz/bigdata18/blob/master/png/forda-wafer.png) | ![plot-adiac-shapesall](https://github.com/hfawaz/bigdata18/blob/master/png/adiac-shapesall.png)
 ### Model's accuracy with respect to the source dataset's similarity
 Herring              |  BeetleFly | WormsTwoClass
 :-------------------------:|:-------------------------:|:-------------------------:
