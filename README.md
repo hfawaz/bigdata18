@@ -18,7 +18,7 @@ To visualize the figures in the paper launch: ```python3 main.py visualize_trans
 To generate the inter-datasets similariy matrix launch: ```python3 main.py compare_datasets```
 
 ### Pre-trained and fine-tuned models
-You can download from the companion [web page](http://germain-forestier.info/bigdata2018/) all pre-trained and fine-tuned models you would need to re-produce the experiments. 
+You can download from the companion [web page](http://germain-forestier.info/src/bigdata2018/) all pre-trained and fine-tuned models you would need to re-produce the experiments. 
 Feel free to fine-tune on your own datasets !!! 
 
 ## Prerequisites
