@@ -61,7 +61,7 @@ If you re-use this work, please cite:
 @InProceedings{IsmailFawaz2018transfer,
   Title                    = {Transfer learning for time series classification},
   Author                   = {Ismail Fawaz, Hassan and Forestier, Germain and Weber, Jonathan and Idoumghar, Lhassane and Muller, Pierre-Alain},
-  booktitle                = {IEEE International Conference On Big Data},
+  booktitle                = {IEEE International Conference on Big Data},
   Year                     = {2018}
 }
 ```
