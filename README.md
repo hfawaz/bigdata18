@@ -44,7 +44,7 @@ The steps for computing the similarity matrix are presented in Algorithm 1 in ou
 
 ### Accuracy variation matrix
 ![acc-matrix](https://github.com/hfawaz/bigdata18/blob/master/png/acc-matrix.png)
-### Genrealization with and without the transfer learning
+### Generalization with and without the transfer learning
 50words - FISH              |  FordA - wafer | Adiac - ShapesAll
 :-------------------------:|:-------------------------:|:-------------------------:
 ![plot-50words-fish](https://github.com/hfawaz/bigdata18/blob/master/png/50words-fish.png)  |  ![plot-forda-wafer](https://github.com/hfawaz/bigdata18/blob/master/png/forda-wafer.png) | ![plot-adiac-shapesall](https://github.com/hfawaz/bigdata18/blob/master/png/adiac-shapesall.png)
