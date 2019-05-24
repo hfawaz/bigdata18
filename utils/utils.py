@@ -33,7 +33,7 @@ from sklearn.metrics import recall_score
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 
-from scipy.interpolate import spline
+
 from scipy.io import loadmat
 
 def readucr(filename):
@@ -236,10 +236,14 @@ def save_logs(output_directory, hist, y_pred, y_true,duration,lr=True,y_true_val
     df_best_model['best_model_train_acc'] = row_best_model['acc']
     df_best_model['best_model_val_acc'] = row_best_model['val_acc']
     if lr == True:
+        # print('row_best_model')
+        # print(row_best_model)
         df_best_model['best_model_learning_rate'] = row_best_model['lr']
     df_best_model['best_model_nb_epoch'] = index_best_model
 
     df_best_model.to_csv(output_directory+'df_best_model.csv', index=False)
+    # print('df_best_model')
+    # print(df_best_model)
 
     # for FCN there is no hyperparameters fine tuning - everything is static in code 
 
@@ -343,6 +347,7 @@ def plot_avg_acc_with_respect_to(df_transfer_mean,root_dir,root_dir_out,archive_
 
 def plot_compare_curves(root_dir,root_dir_transfer_learning,classifier_name,
         archive_name):
+    from scipy.interpolate import spline
     metric = 'loss'
     # loop through the combination of datasets 
     for dataset_name_1 in DATASET_NAMES: 
@@ -486,7 +491,8 @@ def read_tf_matrix(df_perf,archive_name,root_dir,root_dir_out,root_dir_transfer_
 
     return df_transfer
 
-def plot_avg_dba_vs_nn(df_perf,root_dir,df_transfer,datasets,root_dir_out,title): 
+def plot_avg_dba_vs_nn(df_perf,root_dir,df_transfer,datasets,root_dir_out,title):
+    from scipy.interpolate import spline
     nn_max = 84 
 
     # read dba similarity calculations 

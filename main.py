@@ -58,11 +58,11 @@ def build_model(input_shape, nb_classes, pre_model=None):
 	conv1 = keras.layers.normalization.BatchNormalization()(conv1)
 	conv1 = keras.layers.Activation(activation='relu')(conv1)
 
-	conv2 = keras.layers.Conv1D(filters=256, kernel_size=5, padding='same',)(conv1)
+	conv2 = keras.layers.Conv1D(filters=256, kernel_size=5, padding='same')(conv1)
 	conv2 = keras.layers.normalization.BatchNormalization()(conv2)
 	conv2 = keras.layers.Activation('relu')(conv2)
 
-	conv3 = keras.layers.Conv1D(128, kernel_size=3,padding='same',)(conv2)
+	conv3 = keras.layers.Conv1D(128, kernel_size=3,padding='same')(conv2)
 	conv3 = keras.layers.normalization.BatchNormalization()(conv3)
 	conv3 = keras.layers.Activation('relu')(conv3)
 
@@ -118,8 +118,6 @@ def train(pre_model=None):
 	input_shape = (None,x_train.shape[2])
 	model = build_model(input_shape, nb_classes,pre_model)
 
-	pre_model = None 
-
 	if verbose == True: 
 		model.summary()
 
@@ -140,8 +138,11 @@ def train(pre_model=None):
 
 	duration = time.time()-start_time
 
-	df_metrics = save_logs(write_output_dir, hist, y_pred, y_true, duration, y_true_val,y_pred_val)
+	df_metrics = save_logs(write_output_dir, hist, y_pred, y_true,
+						   duration,lr=True, y_true_val=y_true_val,
+						   y_pred_val=y_pred_val)
 
+	print('df_metrics')
 	print(df_metrics)
 
 	keras.backend.clear_session()
@@ -152,12 +153,12 @@ def reduce_function(reduce_algorithm_name, x_train, y_train, C, init_clusters_pe
 					  averaging_algorithm='dba', distance_algorithm='dtw',
 					  init_clusters_per_class=init_clusters_per_class), 'dtw'
 
-root_dir = '/mnt/nfs/casimir/'
+root_dir = '/b/home/uha/hfawaz-datas/dl-tsc/'
 
 results_dir = root_dir+'results/fcn/'
 
 batch_size = 16
-nb_epochs = 10
+nb_epochs = 2000
 verbose = False
 
 write_dir_root = root_dir+'/transfer-learning-results/'
@@ -205,14 +206,14 @@ elif sys.argv[1] == 'train_fcn_scratch':
 		datasets_dict = read_all_datasets(root_dir, archive_name)
 		for dataset_name_tranfer in ALL_DATASET_NAMES:
 			# get the directory of the model for this current dataset_name
-			write_output_dir = results_dir + archive_name + '/' + dataset_name_tranfer + '/'
+			write_output_dir = results_dir + archive_name+'_for_git' + '/' + dataset_name_tranfer + '/'
 			# set model output path
 			file_path = write_output_dir + 'best_model.hdf5'
 			# create directory
 			create_directory(write_output_dir)
 			# reduce learning rate
-			reduce_lr = keras.callbacks.ReduceLROnPlateau(monitor='loss', factor=0.5, patience=50,
-														  min_lr=0.0001)
+			reduce_lr = keras.callbacks.ReduceLROnPlateau(monitor='loss', factor=0.5,
+														  patience=50,min_lr=0.0001)
 			# model checkpoint
 			model_checkpoint = keras.callbacks.ModelCheckpoint(filepath=file_path, monitor='loss',
 															   save_best_only=True)
