@@ -66,3 +66,7 @@ If you re-use this work, please cite:
   Year                     = {2018}
 }
 ```
+
+## Acknowledgement
+
+The  authors  would  like  to  thank  NVIDIA  Corporation  for the GPU Grant and the Mésocentre of Strasbourg for providing access to the GPU cluster.
